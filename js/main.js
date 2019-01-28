@@ -98,7 +98,7 @@ function getMovie() {
       // Now query OMDBAPI for more detail with imdbid from TMDB
       let imdbId = sessionStorage.getItem("movieImdbId");
       axios
-        .get("http://www.omdbapi.com/?i=" + imdbId + "&apikey=bb4308b8")
+        .get("https://www.omdbapi.com/?i=" + imdbId + "&apikey=bb4308b8")
         .then(function(response) {
           console.log(response);
           let movie = response.data;
